@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: row-reverse;
   gap: 12px;
-  font-family: 'Heebo-Bold';
+  font-family: 'Heebo-Bold', serif;
   padding: 8px 10px;
   border-radius: 4px;
   align-items: center;
@@ -18,11 +18,11 @@
   border: none;
 
   &:hover {
-    background: #f3dece;
+    background: var(--sidebar-hover-background);
   }
 
   &:active {
-    background: #efd3bd;
+    background: var(--sidebar-active-background);
   }
 }
 
@@ -55,4 +55,34 @@ $expansion-duration: 0.2s;
 
 .expanded-icon {
   transition: $expansion-duration ease-out;
+}
+
+.dark-mode {
+  background-color: var(--sidebar-color);
+  color: var(--sidebar-text-color);
+
+  .header {
+
+    &:hover {
+      background: var(--sidebar-hover-background);
+    }
+
+    &:active {
+      background: var(--sidebar-active-background);
+    }
+  }
+}
+
+.dark-mode.exercises {
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, 0.66);
+  }
+}
+
+.exercise-header {
+  color: #000
+}
+
+.dark-mode.exercise-header {
+  color: #fff
 }

@@ -6,11 +6,11 @@
     A website to learn and practice <i>touch typing</i> in Hebrew 🇮🇱
     <br />
     <br />
-    <a href="https://typing.dlvhdr.me">✨ View this project live! ✨</a>
+    <a href="https://www.zemmyang.com/hebrew-touch-typing">✨ View this project live! ✨</a>
   </p>
 </p>
 
-<strong><a href="https://typing.dlvhdr.me">typing.dlvhdr.me</a></strong> helps you learn
+The <strong><a href="https://www.zemmyang.com/hebrew-touch-typing">Hebrew Touch Typing</a></strong> application helps you learn
 touch typing in hebrew.
 
 <img src="./demo.gif" width="700px"></img>
@@ -23,6 +23,11 @@ finger positions and incrementally introducing more and more keys.
 
 Touch typing can dramatically improve your typing speed and free your mind from
 staring at the keyboard. With it, typing becomes more natural.
+
+### Credits
+
+Many thanks to https://github.com/dlvhdr for the initial design and implementation. All I 
+did was add dark mode and a way to hide the keyboard.
 
 ### Built With
 

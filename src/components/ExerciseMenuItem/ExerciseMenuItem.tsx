@@ -62,5 +62,4 @@ const ExerciseMenuItem: React.FC<ExerciseMenuItemProps> = ({exercise}) => {
     </button>
   );
 };
-
 export default ExerciseMenuItem;

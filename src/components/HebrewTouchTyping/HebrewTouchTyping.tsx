@@ -15,15 +15,20 @@ interface HebrewTouchTypingProps {
   className?: string;
 }
 
-const HebrewTouchTyping = ({
-  className,
-}: HebrewTouchTypingProps): React.ReactElement | null => {
+const HebrewTouchTyping = ({className}: HebrewTouchTypingProps): React.ReactElement | null => {
   const {selectedExercise} = useExerciseContext();
   const [isExerciseComplete, setIsExerciseComplete] = useState(false);
+  const [isKeyboardVisible, setIsKeyboardVisible] = useState(true);
+
+  const handleKeyboardToggle = () => {
+    setIsKeyboardVisible(!isKeyboardVisible);
+  };
+
   const text = useMemo(
     () => selectedExercise?.text.join('') ?? '',
     [selectedExercise],
   );
+
   const inputRef = useRef<HTMLInputElement | null>(null);
   const [inputValue, setInputValue] = useState('');
   const {wpm, elapsedTimeSeconds, resetWPM} = useWPM(inputValue, text);
@@ -69,7 +74,12 @@ const HebrewTouchTyping = ({
   );
 
   if (selectedExercise == null) {
-    return <HeroSection />;
+    return (
+      <HeroSection
+        onKeyboardToggle={handleKeyboardToggle}
+        isKeyboardVisible={isKeyboardVisible}
+      />
+    );
   }
 
   return (
@@ -100,7 +110,7 @@ const HebrewTouchTyping = ({
           exerciseText={text}
         />
       ) : (
-        <KeyboardSvg currentLetter={currentLetter} />
+        isKeyboardVisible && <KeyboardSvg currentLetter={currentLetter} /> // Conditionally render KeyboardSvg
       )}
     </div>
   );

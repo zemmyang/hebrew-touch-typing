@@ -14,7 +14,9 @@
   flex-direction: column;
   gap: 24px;
   font-size: 1.625em;
-  font-family: 'Cousine-Regular', serif;
+  font-family: "Cousine-Regular", serif;
   color: var(--exercise-complete-card-text);
   direction: ltr;
 }
+
+/*# sourceMappingURL=exercise-complete-card.css.map */

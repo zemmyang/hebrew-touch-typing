@@ -9,20 +9,18 @@
   background: transparent;
   align-items: center;
   justify-content: end;
-
-  &:hover:not(.selected-exercise) {
-    background: var(--sidebar-active-background);
-  }
-
-  &:active {
-    background: var(--sidebar-hover-background);
-  }
+}
+.root:hover:not(.selected-exercise) {
+  background: var(--sidebar-active-background);
+}
+.root:active {
+  background: var(--sidebar-hover-background);
 }
 
 .exercise-number-pill {
   background: #94dade;
   font-size: 0.75em;
-  color: rgba(46, 143, 148, 1);
+  color: rgb(46, 143, 148);
   padding: 0px 10px;
   display: flex;
   align-items: center;
@@ -64,7 +62,7 @@
 }
 
 .wpm {
-  font-family: 'Cousine-Regular', serif;
+  font-family: "Cousine-Regular", serif;
   font-size: 1em;
   color: #716054;
   margin-right: 16px;
@@ -72,7 +70,7 @@
 }
 
 .text-exercise-label {
-  font-family: 'Heebo-Regular', serif;
+  font-family: "Heebo-Regular", serif;
   font-size: 16px;
   grid-row-start: 2;
   grid-column-start: 2;
@@ -80,3 +78,5 @@
   color: var(--text-color);
   width: max-content;
 }
+
+/*# sourceMappingURL=exercise-menu-item.css.map */

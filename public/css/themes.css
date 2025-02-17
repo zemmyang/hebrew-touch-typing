@@ -1,0 +1,49 @@
+:root {
+  --background-color: white;
+  --text-color: #410b13;
+  --sidebar-color: #ffe8d6;
+  --sidebar-hover-background: #f3dece;
+  --sidebar-active-background: #efd3bd;
+  --button-background: #94dade;
+  --button-hover-background: #31797d;
+  --button-active-background: #255b5e;
+  --keycap-color: #000000;
+  --keycap-background: #f2f2f2;
+  --keycap-border: #e2e2e2;
+  --keycap-shadow1: #cacaca;
+  --keycap-shadow2: #dcdcdc;
+  --keyboard-stroke: #000000;
+  --exercise-complete-card-background: #ffe8d6;
+  --exercise-complete-card-text: #202337;
+}
+:root[data-theme=dark] {
+  --background-color: black;
+  --sidebar-color: #001729;
+  --sidebar-hover-background: #0c2131;
+  --sidebar-active-background: #102c42;
+  --text-color: #bef4ec;
+  --button-background: #6b2521;
+  --button-hover-background: #ce8682;
+  --button-active-background: #daa4a1;
+  --keycap-color: #f2f2f2;
+  --keycap-background: #0d0d0d;
+  --keycap-border: #1d1d1d;
+  --keycap-shadow1: #353535;
+  --keycap-shadow2: #232323;
+  --keyboard-stroke: #ffffff;
+  --exercise-complete-card-background: #001729;
+  --exercise-complete-card-text: #dfdcc8;
+}
+
+.sidebar {
+  background-color: var(--sidebar-color);
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+/*# sourceMappingURL=themes.css.map */

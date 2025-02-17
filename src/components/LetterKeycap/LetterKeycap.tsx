@@ -5,7 +5,7 @@ interface LetterKeycapProps {
   letter: string;
 }
 
-const LetterKeycap: React.FC<LetterKeycapProps> = ({letter}) => {
+const LetterKeycap: React.FC<LetterKeycapProps> = ({ letter }) => {
   return (
     <div className={styles.root}>
       <span className={styles.letter}>{letter}</span>

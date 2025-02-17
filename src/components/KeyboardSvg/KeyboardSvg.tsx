@@ -57,6 +57,7 @@ export const KeyboardSvg = ({currentLetter}: KeyboardSvgProps): JSX.Element => {
       version="1.1"
       viewBox="0 0 177.44 105.83"
       xmlns="http://www.w3.org/2000/svg"
+      // style={{ backgroundColor: '#f0f0f0' }}
     >
       <defs>
         <marker id="TriangleInM" overflow="visible" orient="auto">
@@ -71,7 +72,7 @@ export const KeyboardSvg = ({currentLetter}: KeyboardSvgProps): JSX.Element => {
         </marker>
       </defs>
       <g fill="none">
-        <g stroke="#000" strokeWidth=".13229">
+        <g stroke="var(--keyboard-stroke)" strokeWidth=".13229">
           <path
             id="keycap-z"
             d="m56.795 48.881c-4.64e-4 0.53362-0.47101 0.96607-1.0515 0.96639h-9.1779c-0.5807 0-1.0515-0.43261-1.0517-0.96639v-8.437c3.53e-4 -0.53374 0.4711-0.96627 1.0517-0.96638h9.1779c0.58047 4.3e-4 1.0509 0.43281 1.0515 0.96638z"

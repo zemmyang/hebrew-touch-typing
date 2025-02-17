@@ -1,10 +1,10 @@
 {
   "name": "hebrew-touch-typing",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "description": "Hebrew Touch Typing",
   "main": "src/index.tsx",
-  "repository": "git@github.com:dlvhdr/hebrew-touch-typing.git",
-  "author": "dolevc2@gmail.com",
+  "repository": "git@github.com:zemmyang/hebrew-touch-typing.git",
+  "author": "angeleene.ang@gmail.com",
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.config.ts",
@@ -40,7 +40,7 @@
     "html-webpack-plugin": "^5.3.2",
     "jest": "^27.1.1",
     "prettier": "2.3.2",
-    "resolve-url-loader": "^4.0.0",
+    "resolve-url-loader": "^5.0.0",
     "sass": "^1.39.0",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
@@ -52,7 +52,7 @@
   "dependencies": {
     "@types/node": "^16.4.13",
     "@types/webpack": "^5.28.0",
-    "@types/webpack-dev-server": "^3.11.5",
+    "@types/webpack-dev-server": "^4.7.1",
     "classnames": "^2.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

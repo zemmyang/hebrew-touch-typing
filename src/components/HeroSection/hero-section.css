@@ -1,26 +1,25 @@
+@charset "UTF-8";
 .empty-state {
   margin-block: 10vh;
   height: 500px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-
-  h1 {
-    position: relative;
-    width: 20vw;
-    align-self: flex-start;
-    text-align: right;
-
-    &::after {
-      content: '';
-      height: 4px;
-      background: rgba(255, 110, 99, 0.4);
-      position: absolute;
-      width: 4ch;
-      top: 2ch;
-      right: 0;
-    }
-  }
+}
+.empty-state h1 {
+  position: relative;
+  width: 20vw;
+  align-self: flex-start;
+  text-align: right;
+}
+.empty-state h1::after {
+  content: "";
+  height: 4px;
+  background: rgba(255, 110, 99, 0.4);
+  position: absolute;
+  width: 4ch;
+  top: 2ch;
+  right: 0;
 }
 
 .text-block {
@@ -38,7 +37,7 @@
   align-self: flex-end;
   border-radius: 4px;
   padding: 10px 40px;
-  font-family: 'Heebo-Bold', serif;
+  font-family: "Heebo-Bold", serif;
   font-size: 24px;
   line-height: 100%;
   color: var(--button-color);
@@ -61,18 +60,16 @@
   background-color: var(--button-hover-background);
 }
 
-// --------------------- //
-
 .keyboard-toggle-button.dark {
   background: #ffe8d6;
 }
 
 .keyboard-toggle-button::before {
-  content: '⌨️';
+  content: "⌨️";
 }
 
 .keyboard-toggle-button.dark::before {
-  content: '⌨️';
+  content: "⌨️";
 }
 
 .keyboard-toggle-button.on {
@@ -96,9 +93,11 @@
 }
 
 .toggle-button.on::before {
-  content: '🌞';
+  content: "🌞";
 }
 
 .toggle-button::before {
-  content: '🌜';
+  content: "🌜";
 }
+
+/*# sourceMappingURL=hero-section.css.map */

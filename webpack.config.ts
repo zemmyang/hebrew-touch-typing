@@ -1,7 +1,8 @@
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const PUBLIC_PATH = process.env.PUBLIC_PATH || path.resolve(__dirname, 'dist');
+// const PUBLIC_PATH = process.env.PUBLIC_PATH || path.resolve(__dirname, 'dist');
+const PUBLIC_PATH = process.env.PUBLIC_PATH || "/";
 
 module.exports = {
   mode: 'development',
@@ -12,9 +13,15 @@ module.exports = {
     publicPath: PUBLIC_PATH,
   },
   devServer: {
-    static: {
-      directory: './dist',
+    open: true,
+    port: 3000,
+    devMiddleware: {
+      writeToDisk: true,
     },
+    // static: {
+    //   directory: './dist',
+    //   watch: true
+    // },
   },
   plugins: [
     new HtmlWebpackPlugin({
