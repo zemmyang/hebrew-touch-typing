@@ -3,7 +3,11 @@
   "version": "2.0.1",
   "description": "Hebrew Touch Typing",
   "main": "src/index.tsx",
-  "repository": "git@github.com:zemmyang/hebrew-touch-typing.git",
+  "homepage": "http://zemmyang.github.io/hebrew-touch-typing",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zemmyang/hebrew-touch-typing.git"
+  },
   "author": "angeleene.ang@gmail.com",
   "license": "MIT",
   "scripts": {
@@ -12,7 +16,9 @@
     "dev:docker": "webpack serve --config webpack.config.ts --host 0.0.0.0 --port 3000",
     "lint": "eslint",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
